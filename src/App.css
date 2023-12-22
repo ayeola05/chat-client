@@ -1,0 +1,48 @@
+.layout {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  height: 500px;
+  width: 1000px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+}
+
+.card input {
+  border: 1px solid black;
+  padding: 2px 0;
+  margin: 0 2px;
+}
+
+.card button {
+  background-color: grey;
+  color: white;
+}
+
+.card header {
+  margin-bottom: 400px;
+}
+
+.message {
+  /* display: flex; */
+  /* justify-content: left; */
+  /* align-items: left; */
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.clear {
+  margin-top: 10px;
+}

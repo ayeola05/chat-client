@@ -46,3 +46,7 @@
 .clear {
   margin-top: 10px;
 }
+
+button {
+  cursor: pointer;
+}

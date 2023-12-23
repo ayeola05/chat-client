@@ -41,6 +41,7 @@ function App() {
   const sendMessage = (e) => {
     e.preventDefault();
     socket.emit("createMessage", { text: messageText }, () => {});
+    setMessageText("");
   };
 
   let timeout;
@@ -99,6 +100,7 @@ function App() {
                   type="text"
                   id="message"
                   placeholder="message"
+                  value={messageText}
                 />
                 <button type="submit">Send</button>
                 <button onClick={clearChat}>Clear Chat</button>

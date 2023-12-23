@@ -13,7 +13,6 @@ function App() {
   const [typing, setIsTyping] = useState("");
 
   useEffect(() => {
-    console.log("Use effect called");
     socket.emit("findAllMessages", {}, (response) => {
       setMessages(response);
     });
